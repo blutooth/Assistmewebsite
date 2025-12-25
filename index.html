@@ -1,0 +1,671 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AssistMe Solicitors | Family Law Specialists</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css?v=30">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="nav" id="nav">
+        <div class="nav-container">
+            <a href="#" class="logo">
+                <span class="logo-icon">⚖</span>
+                <span class="logo-text">AssistMe<span class="logo-accent">.</span></span>
+            </a>
+            <div class="nav-badge">
+                <span class="sra-badge">SRA Regulated</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#services">Services</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#team">Leadership</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <button class="theme-toggle" aria-label="Toggle dark mode" id="theme-toggle">
+                <svg class="moon-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M21.752 15.002A9.72 9.72 0 0 1 18 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 0 0 3 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 0 0 9.002-5.998Z" />
+                </svg>
+                <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 3v2.25m6.364.386-1.591 1.591M21 12h-2.25m-.386 6.364-1.591-1.591M12 18.75V21m-4.773-4.227-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0Z" />
+                </svg>
+            </button>
+            <a href="#contact" class="nav-cta">Book Consultation</a>
+            <button class="mobile-menu-toggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="hero-bg">
+            <div class="hero-gradient"></div>
+            <div class="hero-pattern"></div>
+        </div>
+
+        <div class="container hero-layout">
+            <div class="hero-content">
+                <div class="hero-badge animate-fade-up">Family Law Specialists</div>
+                <h1 class="hero-title animate-fade-up delay-1">
+                    Leading in<br>
+                    <span class="hero-title-accent">family law</span>
+                </h1>
+                <p class="hero-description animate-fade-up delay-2">
+                    Compassionate legal guidance for life's most important moments.
+                    From divorce and custody to adoption and estate planning —
+                    we're here with expertise you can trust.
+                </p>
+                <div class="hero-actions animate-fade-up delay-3">
+                    <a href="#contact" class="btn btn-primary">
+                        <span>Get in touch</span>
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M5 12h14M12 5l7 7-7 7"/>
+                        </svg>
+                    </a>
+                    <a href="#services" class="btn btn-secondary">
+                        <span>Our Services</span>
+                    </a>
+                </div>
+
+                <div class="hero-proof animate-fade-up delay-4" aria-label="Trust and reassurance">
+                    <div class="hero-proof-chips">
+                        <span class="proof-chip">Confidential consultations</span>
+                        <span class="proof-chip">SRA regulated practice</span>
+                        <span class="proof-chip">Clear, fixed-fee options</span>
+                    </div>
+                    <div class="hero-proof-quotes">
+                        <figure class="proof-quote">
+                            <blockquote>“Clear, calm advice when it mattered most.”</blockquote>
+                            <figcaption>Client feedback</figcaption>
+                        </figure>
+                        <figure class="proof-quote">
+                            <blockquote>“Professional, responsive, and genuinely compassionate.”</blockquote>
+                            <figcaption>Client feedback</figcaption>
+                        </figure>
+                    </div>
+                </div>
+            </div>
+
+            <div class="hero-visual">
+                <div class="hero-portraits">
+                    <a class="hero-portrait hero-portrait--main hero-portrait-link" href="#reviews" aria-label="Read client reviews">
+                        <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=600&q=80" alt="" decoding="async" loading="eager">
+                    </a>
+                    <a class="hero-portrait hero-portrait--top hero-portrait-link" href="#reviews" aria-label="Read client reviews">
+                        <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?w=400&q=80" alt="" decoding="async" loading="eager">
+                    </a>
+                    <a class="hero-portrait hero-portrait--bottom hero-portrait-link" href="#reviews" aria-label="Read client reviews">
+                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&q=80" alt="" decoding="async" loading="eager">
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <a class="scroll-indicator" href="#services" aria-label="Scroll to services">
+            <span>Scroll</span>
+            <div class="scroll-line"></div>
+        </a>
+    </header>
+
+    <!-- Trust Indicators Section -->
+    <section class="trust-bar">
+        <div class="container">
+            <div class="trust-content">
+                <div class="trust-portraits">
+                    <a class="trust-portrait trust-portrait-link" href="#reviews" aria-label="Read client reviews">
+                        <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?w=200&q=80" alt="Team member" loading="lazy" decoding="async">
+                    </a>
+                    <a class="trust-portrait trust-portrait-link" href="#reviews" aria-label="Read client reviews">
+                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=200&q=80" alt="Team member" loading="lazy" decoding="async">
+                    </a>
+                    <a class="trust-portrait trust-portrait-link" href="#reviews" aria-label="Read client reviews">
+                        <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=200&q=80" alt="Team member" loading="lazy" decoding="async">
+                    </a>
+                    <a class="trust-portrait trust-portrait-count trust-portrait-link" href="#reviews" aria-label="Read client reviews">
+                        <span>+5</span>
+                    </a>
+                </div>
+                <div class="trust-text">
+                    <p>Trusted by <strong>1,000+ families</strong> across the UK</p>
+                    <span class="trust-subtitle">Fully regulated legal practice</span>
+                </div>
+                <div class="trust-credentials">
+                    <a href="https://www.sra.org.uk/" target="_blank" rel="noopener" class="credential-item" title="Solicitors Regulation Authority">
+                        <div class="credential-logo-box sra">
+                            <svg viewBox="0 0 100 40" class="credential-svg">
+                                <text x="50" y="28" text-anchor="middle" font-size="24" font-weight="700" fill="currentColor">SRA</text>
+                            </svg>
+                        </div>
+                        <span class="credential-label">Regulated</span>
+                    </a>
+                    <a href="https://www.lawsociety.org.uk/" target="_blank" rel="noopener" class="credential-item" title="The Law Society">
+                        <div class="credential-logo-box law-society">
+                            <svg viewBox="0 0 100 40" class="credential-svg">
+                                <text x="50" y="18" text-anchor="middle" font-size="10" font-weight="600" fill="currentColor">THE LAW</text>
+                                <text x="50" y="32" text-anchor="middle" font-size="12" font-weight="700" fill="currentColor">SOCIETY</text>
+                            </svg>
+                        </div>
+                        <span class="credential-label">Member</span>
+                    </a>
+                    <div class="credential-item" title="Resolution - Family Law Specialists">
+                        <div class="credential-logo-box resolution">
+                            <svg viewBox="0 0 100 40" class="credential-svg">
+                                <text x="50" y="26" text-anchor="middle" font-size="14" font-weight="600" fill="currentColor">Resolution</text>
+                            </svg>
+                        </div>
+                        <span class="credential-label">Member</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reviews Section -->
+    <section class="reviews" id="reviews">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Reviews</span>
+                <h2 class="section-title">What clients say</h2>
+                <p class="section-description">
+                    A few words from people we’ve supported — with clarity, discretion, and care.
+                </p>
+            </div>
+
+            <div class="reviews-grid">
+                <article class="review-card">
+                    <div class="review-stars" aria-label="5 out of 5 stars">★★★★★</div>
+                    <p class="review-quote">“Clear, calm advice when it mattered most. Everything was explained in plain English.”</p>
+                    <div class="review-meta">
+                        <span class="review-name">Former client</span>
+                        <span class="review-sep">•</span>
+                        <span class="review-detail">Family law matter</span>
+                    </div>
+                </article>
+
+                <article class="review-card">
+                    <div class="review-stars" aria-label="5 out of 5 stars">★★★★★</div>
+                    <p class="review-quote">“Professional, responsive, and genuinely compassionate. I always knew what the next step was.”</p>
+                    <div class="review-meta">
+                        <span class="review-name">Former client</span>
+                        <span class="review-sep">•</span>
+                        <span class="review-detail">Child arrangements</span>
+                    </div>
+                </article>
+
+                <article class="review-card">
+                    <div class="review-stars" aria-label="5 out of 5 stars">★★★★★</div>
+                    <p class="review-quote">“Transparent fees and no surprises. The team handled everything with discretion.”</p>
+                    <div class="review-meta">
+                        <span class="review-name">Former client</span>
+                        <span class="review-sep">•</span>
+                        <span class="review-detail">Divorce & separation</span>
+                    </div>
+                </article>
+
+                <article class="review-card">
+                    <div class="review-stars" aria-label="5 out of 5 stars">★★★★★</div>
+                    <p class="review-quote">“Strong, steady support throughout. Communication was excellent from start to finish.”</p>
+                    <div class="review-meta">
+                        <span class="review-name">Former client</span>
+                        <span class="review-sep">•</span>
+                        <span class="review-detail">Financial settlement</span>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services" id="services">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">What We Do</span>
+                <h2 class="section-title">Legal Services</h2>
+                <p class="section-description">
+                    Comprehensive family law expertise delivered with care and professionalism
+                </p>
+            </div>
+            <div class="services-grid">
+                <article class="service-card">
+                    <div class="service-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/>
+                            <polyline points="9,22 9,12 15,12 15,22"/>
+                        </svg>
+                    </div>
+                    <h3 class="service-title">Divorce & Separation</h3>
+                    <p class="service-description">
+                        Guiding you through divorce proceedings with sensitivity, ensuring fair outcomes for all parties.
+                    </p>
+                    <a href="#contact" class="service-link">
+                        Learn more
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M5 12h14M12 5l7 7-7 7"/>
+                        </svg>
+                    </a>
+                </article>
+                <article class="service-card">
+                    <div class="service-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/>
+                            <circle cx="9" cy="7" r="4"/>
+                            <path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75"/>
+                        </svg>
+                    </div>
+                    <h3 class="service-title">Child Custody</h3>
+                    <p class="service-description">
+                        Advocating for arrangements that prioritize your children's wellbeing and your parental rights.
+                    </p>
+                    <a href="#contact" class="service-link">
+                        Learn more
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M5 12h14M12 5l7 7-7 7"/>
+                        </svg>
+                    </a>
+                </article>
+                <article class="service-card">
+                    <div class="service-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/>
+                        </svg>
+                    </div>
+                    <h3 class="service-title">Adoption</h3>
+                    <p class="service-description">
+                        Supporting families through the adoption journey with expert legal guidance every step of the way.
+                    </p>
+                    <a href="#contact" class="service-link">
+                        Learn more
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M5 12h14M12 5l7 7-7 7"/>
+                        </svg>
+                    </a>
+                </article>
+                <article class="service-card">
+                    <div class="service-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                        </svg>
+                    </div>
+                    <h3 class="service-title">Domestic Protection</h3>
+                    <p class="service-description">
+                        Providing swift, compassionate support for those facing domestic violence situations.
+                    </p>
+                    <a href="#contact" class="service-link">
+                        Learn more
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M5 12h14M12 5l7 7-7 7"/>
+                        </svg>
+                    </a>
+                </article>
+                <article class="service-card">
+                    <div class="service-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <rect x="2" y="7" width="20" height="14" rx="2" ry="2"/>
+                            <path d="M16 21V5a2 2 0 00-2-2h-4a2 2 0 00-2 2v16"/>
+                        </svg>
+                    </div>
+                    <h3 class="service-title">Financial Settlements</h3>
+                    <p class="service-description">
+                        Securing fair financial outcomes through meticulous negotiation and legal expertise.
+                    </p>
+                    <a href="#contact" class="service-link">
+                        Learn more
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M5 12h14M12 5l7 7-7 7"/>
+                        </svg>
+                    </a>
+                </article>
+                <article class="service-card">
+                    <div class="service-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <circle cx="12" cy="12" r="10"/>
+                            <path d="M8 14s1.5 2 4 2 4-2 4-2M9 9h.01M15 9h.01"/>
+                        </svg>
+                    </div>
+                    <h3 class="service-title">Mediation</h3>
+                    <p class="service-description">
+                        Facilitating constructive dialogue to reach amicable solutions without court proceedings.
+                    </p>
+                    <a href="#contact" class="service-link">
+                        Learn more
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M5 12h14M12 5l7 7-7 7"/>
+                        </svg>
+                    </a>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works -->
+    <section class="process" id="process">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">How It Works</span>
+                <h2 class="section-title">A clear, calm process</h2>
+                <p class="section-description">
+                    We keep everything straightforward — so you always know what happens next.
+                </p>
+            </div>
+            <div class="process-steps">
+                <div class="process-step">
+                    <div class="process-number">01</div>
+                    <h3 class="process-title">Free confidential consultation</h3>
+                    <p class="process-text">Tell us what’s happening. We’ll listen first, then outline your options clearly.</p>
+                </div>
+                <div class="process-step">
+                    <div class="process-number">02</div>
+                    <h3 class="process-title">A plan you can trust</h3>
+                    <p class="process-text">We agree a strategy and costs up front — with fixed-fee options where possible.</p>
+                </div>
+                <div class="process-step">
+                    <div class="process-number">03</div>
+                    <h3 class="process-title">Steady progress</h3>
+                    <p class="process-text">We handle the legal work and keep you updated, with empathy and professionalism.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-content">
+                    <span class="section-label">About Us</span>
+                    <h2 class="section-title">A Legacy of Trust</h2>
+                    <p class="about-text">
+                        For over two decades, AssistMe Solicitors has been a pillar of support 
+                        for families across the United Kingdom. We combine legal excellence 
+                        with genuine compassion, understanding that behind every case is a 
+                        family navigating difficult times.
+                    </p>
+                    <p class="about-text">
+                        Our approach is different. We listen first, advise second, and act 
+                        decisively to protect what matters most to you. Whether you're facing 
+                        divorce, custody disputes, or planning for your family's future, our 
+                        team provides the expertise and support you deserve.
+                    </p>
+                    <div class="about-features">
+                        <div class="feature">
+                            <div class="feature-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <polyline points="20,6 9,17 4,12"/>
+                                </svg>
+                            </div>
+                            <span>Personalized Legal Strategies</span>
+                        </div>
+                        <div class="feature">
+                            <div class="feature-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <polyline points="20,6 9,17 4,12"/>
+                                </svg>
+                            </div>
+                            <span>Transparent, Fixed-Fee Pricing</span>
+                        </div>
+                        <div class="feature">
+                            <div class="feature-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <polyline points="20,6 9,17 4,12"/>
+                                </svg>
+                            </div>
+                            <span>SRA Regulated Practice</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-visual">
+                    <div class="about-image-container">
+                        <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?w=800&q=80" alt="Modern law office interior" class="about-image" loading="lazy" decoding="async">
+                        <div class="about-quote">
+                            <blockquote>
+                                Justice is not just about the law. It's about understanding 
+                                people and protecting what they hold dear.
+                            </blockquote>
+                            <cite>— Our Founding Principle</cite>
+                        </div>
+                    </div>
+                    <div class="award-badge">
+                        <span class="award-year">2024</span>
+                        <span class="award-text">Legal Excellence Award</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Leadership Section -->
+    <section class="leadership" id="team">
+        <div class="container">
+            <div class="leadership-grid">
+                <div class="leadership-content">
+                    <span class="section-label">Leadership</span>
+                    <h2 class="section-title">Marie Erete</h2>
+                    <p class="leadership-role">Principal Solicitor & Founder</p>
+                    <div class="leadership-bio">
+                        <p>
+                            With over 15 years of dedicated practice in family law, Marie Erete founded 
+                            AssistMe Solicitors with a clear vision: to provide compassionate, expert legal 
+                            guidance to families during their most challenging moments.
+                        </p>
+                        <p>
+                            Marie's approach combines rigorous legal expertise with genuine empathy. 
+                            Having worked with hundreds of families across the United Kingdom, she 
+                            understands that every case represents real people navigating difficult 
+                            life transitions.
+                        </p>
+                        <p>
+                            Her practice philosophy centres on clear communication, transparent pricing, 
+                            and achieving the best possible outcomes for her clients—particularly when 
+                            children's welfare is at stake.
+                        </p>
+                    </div>
+                    <div class="leadership-credentials">
+                        <div class="credential">
+                            <span class="credential-title">LLB (Hons)</span>
+                            <span class="credential-detail">Law Degree</span>
+                        </div>
+                        <div class="credential">
+                            <span class="credential-title">SRA Regulated</span>
+                            <span class="credential-detail">Solicitors Regulation Authority</span>
+                        </div>
+                        <div class="credential">
+                            <span class="credential-title">Resolution Member</span>
+                            <span class="credential-detail">Family Law Specialists</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="leadership-visual">
+                    <div class="leadership-image">
+                        <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=600&q=80" alt="Marie Erete, Principal Solicitor" class="leadership-photo" loading="lazy" decoding="async">
+                    </div>
+                    <div class="leadership-quote">
+                        <blockquote>
+                            "Every family deserves a solicitor who truly listens. My role is to 
+                            guide, protect, and advocate—always with your family's best interests at heart."
+                        </blockquote>
+                        <cite>— Marie Erete</cite>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <span class="section-label">Get in Touch</span>
+                    <h2 class="section-title">Let's Talk</h2>
+                    <p class="contact-description">
+                        Ready to discuss your situation? Book a free, confidential 
+                        consultation with one of our experienced solicitors.
+                    </p>
+
+                    <div class="contact-reassurance" aria-label="What happens next">
+                        <div class="reassurance-row">
+                            <span class="reassurance-label">Response time</span>
+                            <span class="reassurance-value">We aim to reply within 1 business day.</span>
+                        </div>
+                        <ul class="reassurance-list">
+                            <li>No obligation — just clarity on your options.</li>
+                            <li>Confidential and discreet.</li>
+                            <li>Clear next steps and costs before any work begins.</li>
+                        </ul>
+                    </div>
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                    <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <span class="contact-label">Phone</span>
+                                <a href="tel:+442071234567" class="contact-value">+44 20 7123 4567</a>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                                    <polyline points="22,6 12,13 2,6"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <span class="contact-label">Email</span>
+                                <a href="mailto:info@assistme.law" class="contact-value">info@assistme.law</a>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/>
+                                    <circle cx="12" cy="10" r="3"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <span class="contact-label">Address</span>
+                                <span class="contact-value">123 Legal District, London EC1A 1BB</span>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                    <circle cx="12" cy="12" r="10"/>
+                                    <polyline points="12,6 12,12 16,14"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <span class="contact-label">Hours</span>
+                                <span class="contact-value">Mon-Fri: 9am - 6pm</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <form class="contact-form">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="firstName">First Name</label>
+                            <input type="text" id="firstName" name="firstName" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="lastName">Last Name</label>
+                            <input type="text" id="lastName" name="lastName" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone" name="phone">
+                    </div>
+                    <div class="form-group">
+                        <label for="service">Service Required</label>
+                        <select id="service" name="service">
+                            <option value="">Select a service...</option>
+                            <option value="divorce">Divorce & Separation</option>
+                            <option value="custody">Child Custody</option>
+                            <option value="adoption">Adoption</option>
+                            <option value="protection">Domestic Protection</option>
+                            <option value="financial">Financial Settlements</option>
+                            <option value="mediation">Mediation</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Your Message</label>
+                        <textarea id="message" name="message" rows="4" placeholder="Tell us briefly about your situation..."></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-full">
+                        <span>Book Free Consultation</span>
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M5 12h14M12 5l7 7-7 7"/>
+                        </svg>
+                    </button>
+                    <p class="form-disclaimer">
+                        All consultations are strictly confidential. By submitting, you agree to our privacy policy.
+                    </p>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="#" class="logo">
+                        <span class="logo-icon">⚖</span>
+                        <span class="logo-text">AssistMe<span class="logo-accent">.</span></span>
+                    </a>
+                    <p class="footer-tagline">
+                        Professional family law services with over 20 years of experience. 
+                        Your trusted partners in navigating life's most important legal matters.
+                    </p>
+                </div>
+                <div class="footer-links">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="#services">Divorce & Separation</a></li>
+                        <li><a href="#services">Child Custody</a></li>
+                        <li><a href="#services">Adoption</a></li>
+                        <li><a href="#services">Financial Settlements</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#team">Leadership</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4>Contact</h4>
+                    <p>+44 20 7123 4567</p>
+                    <p>info@assistme.law</p>
+                    <p>123 Legal District<br>London EC1A 1BB</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2024 AssistMe Solicitors. All rights reserved.</p>
+                <p>Regulated by the Solicitors Regulation Authority</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
