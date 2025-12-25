@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <!-- White background -->
+  <rect width="64" height="64" rx="12" fill="#ffffff"/>
+  
+  <!-- "A" letter (AssistMe blue) - better proportioned -->
+  <path d="M 16 48 L 32 10 L 48 48 L 43 48 L 40 40 L 24 40 L 21 48 Z M 27 32 L 37 32 L 32 22 Z" fill="#1e3a5f"/>
+  
+  <!-- Scales (red accent) - better sized and positioned -->
+  <g transform="translate(38 12)" stroke="#c0392b" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <!-- Vertical post -->
+    <line x1="10" y1="0" x2="10" y2="16"/>
+    <!-- Horizontal beam -->
+    <line x1="3" y1="4" x2="17" y2="4"/>
+    <!-- Left scale pan -->
+    <path d="M 3 4 L 1 8 L 5 8 Z"/>
+    <!-- Right scale pan -->
+    <path d="M 17 4 L 15 8 L 19 8 Z"/>
+    <!-- Base -->
+    <line x1="8" y1="16" x2="12" y2="16"/>
+  </g>
+</svg>

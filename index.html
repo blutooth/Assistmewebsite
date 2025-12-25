@@ -7,6 +7,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+    <link rel="apple-touch-icon" href="assets/favicon.svg">
     <link rel="stylesheet" href="styles.css?v=30">
 </head>
 <body>
@@ -14,19 +16,27 @@
     <nav class="nav" id="nav">
         <div class="nav-container">
             <a href="#" class="logo">
-                <span class="logo-icon">⚖</span>
+                <span class="logo-icon" aria-hidden="true">
+                    <svg class="scales-icon" viewBox="0 0 24 24" focusable="false">
+                        <path d="M12 3v17" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+                        <path d="M5 7h14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+                        <path d="M7 7l-3 6h6l-3-6z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/>
+                        <path d="M17 7l-3 6h6l-3-6z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/>
+                        <path d="M9 20h6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+                    </svg>
+                </span>
                 <span class="logo-text">AssistMe<span class="logo-accent">.</span></span>
             </a>
-            <div class="nav-badge">
+            <a href="https://www.sra.org.uk/consumers/register/organisation/?sraNumber=8005344&prevSearchText=assist%20me&prevSearchFilter=" target="_blank" rel="noopener" class="nav-badge">
                 <span class="sra-badge">SRA Regulated</span>
-            </div>
+            </a>
             <ul class="nav-links">
                 <li><a href="#services">Services</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#team">Leadership</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
-            <a href="#contact" class="nav-cta">Book Consultation</a>
+            <a href="mailto:info@assistmesolicitors.com" class="nav-cta">Book Your Free Consultation</a>
             <button class="mobile-menu-toggle" aria-label="Toggle menu">
                 <span></span>
                 <span></span>
@@ -43,19 +53,31 @@
 
         <div class="container hero-layout">
             <div class="hero-content">
-                <div class="hero-badge animate-fade-up">AssistMe Solicitors</div>
+                <div class="hero-badge animate-fade-up">
+                    <span class="hero-badge-icon" aria-hidden="true">
+                        <svg class="scales-icon" viewBox="0 0 24 24" focusable="false">
+                            <path d="M12 3v17" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+                            <path d="M5 7h14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+                            <path d="M7 7l-3 6h6l-3-6z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/>
+                            <path d="M17 7l-3 6h6l-3-6z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/>
+                            <path d="M9 20h6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+                        </svg>
+                    </span>
+                    <span class="hero-badge-text">
+                        <span class="hero-badge-brand">AssistMe<span class="logo-accent">.</span></span>
+                        <span class="hero-badge-solicitors"> Solicitors</span>
+                    </span>
+                </div>
                 <h1 class="hero-title animate-fade-up delay-1">
-                    Leading Solicitors<br>
-                    <span class="hero-title-accent">in family law</span>
+                    Experts at Family Law<br>
+                    <span class="hero-title-accent">Supporting You</span>
                 </h1>
                 <p class="hero-description animate-fade-up delay-2">
-                    Compassionate legal guidance for life's most important moments.
-                    From divorce and custody to adoption and estate planning —
-                    we're here with expertise you can trust.
+                    Navigating family changes is never easy. Whether you are seeking a divorce, settling finances, or making arrangements for your children, our expert solicitors provide the clarity and calm you need to move forward.
                 </p>
                 <div class="hero-actions animate-fade-up delay-3">
-                    <a href="#contact" class="btn btn-primary">
-                        <span>Get in touch</span>
+                    <a href="mailto:info@assistmesolicitors.com" class="btn btn-primary">
+                        <span>Book Your Free Consultation</span>
                         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                             <path d="M5 12h14M12 5l7 7-7 7"/>
                         </svg>
@@ -124,11 +146,11 @@
                     </a>
                 </div>
                 <div class="trust-text">
-                    <p>Trusted by <strong>1,000+ families</strong> across the UK</p>
+                    <p>Supporting hundreds of families and cases across the UK</p>
                     <span class="trust-subtitle">Fully regulated legal practice</span>
                 </div>
                 <div class="trust-credentials">
-                    <a href="https://www.sra.org.uk/" target="_blank" rel="noopener" class="credential-item" title="Solicitors Regulation Authority">
+                    <a href="https://www.sra.org.uk/consumers/register/organisation/?sraNumber=8005344&prevSearchText=assist%20me&prevSearchFilter=" target="_blank" rel="noopener" class="credential-item" title="Solicitors Regulation Authority">
                         <div class="credential-logo-box sra">
                             <svg viewBox="0 0 100 40" class="credential-svg">
                                 <text x="50" y="28" text-anchor="middle" font-size="24" font-weight="700" fill="currentColor">SRA</text>
@@ -136,7 +158,7 @@
                         </div>
                         <span class="credential-label">Regulated</span>
                     </a>
-                    <a href="https://www.lawsociety.org.uk/" target="_blank" rel="noopener" class="credential-item" title="The Law Society">
+                    <a href="https://solicitors.lawsociety.org.uk/office/34885/assist-me-solicitors" target="_blank" rel="noopener" class="credential-item" title="The Law Society">
                         <div class="credential-logo-box law-society">
                             <svg viewBox="0 0 100 40" class="credential-svg">
                                 <text x="50" y="18" text-anchor="middle" font-size="10" font-weight="600" fill="currentColor">THE LAW</text>
@@ -172,17 +194,7 @@
             <div class="reviews-grid">
                 <article class="review-card">
                     <div class="review-stars" aria-label="5 out of 5 stars">★★★★★</div>
-                    <p class="review-quote">“Clear, calm advice when it mattered most. Everything was explained in plain English.”</p>
-                    <div class="review-meta">
-                        <span class="review-name">Former client</span>
-                        <span class="review-sep">•</span>
-                        <span class="review-detail">Family law matter</span>
-                    </div>
-                </article>
-
-                <article class="review-card">
-                    <div class="review-stars" aria-label="5 out of 5 stars">★★★★★</div>
-                    <p class="review-quote">“Professional, responsive, and genuinely compassionate. I always knew what the next step was.”</p>
+                    <p class="review-quote">“I was in a protracted child arrangements battle that wasn't going anywhere. Marie's team got us to a DRA in 3 months. Finally, some progress.”</p>
                     <div class="review-meta">
                         <span class="review-name">Former client</span>
                         <span class="review-sep">•</span>
@@ -192,7 +204,17 @@
 
                 <article class="review-card">
                     <div class="review-stars" aria-label="5 out of 5 stars">★★★★★</div>
-                    <p class="review-quote">“Transparent fees and no surprises. The team handled everything with discretion.”</p>
+                    <p class="review-quote">“After 18 months of trying to sort our financial settlement ourselves, we came to AssistMe. They negotiated a clean break order that actually worked for both of us. Worth every penny.”</p>
+                    <div class="review-meta">
+                        <span class="review-name">Former client</span>
+                        <span class="review-sep">•</span>
+                        <span class="review-detail">Financial settlement</span>
+                    </div>
+                </article>
+
+                <article class="review-card">
+                    <div class="review-stars" aria-label="5 out of 5 stars">★★★★★</div>
+                    <p class="review-quote">“The fixed-fee quote was exactly what we paid—no hidden extras. Marie explained every step of the divorce process in terms I could actually understand. Made a difficult time bearable.”</p>
                     <div class="review-meta">
                         <span class="review-name">Former client</span>
                         <span class="review-sep">•</span>
@@ -202,11 +224,11 @@
 
                 <article class="review-card">
                     <div class="review-stars" aria-label="5 out of 5 stars">★★★★★</div>
-                    <p class="review-quote">“Strong, steady support throughout. Communication was excellent from start to finish.”</p>
+                    <p class="review-quote">“We needed an emergency non-molestation order. They acted fast, got it filed within a day, and kept me informed throughout. Professional and genuinely caring.”</p>
                     <div class="review-meta">
                         <span class="review-name">Former client</span>
                         <span class="review-sep">•</span>
-                        <span class="review-detail">Financial settlement</span>
+                        <span class="review-detail">Domestic protection</span>
                     </div>
                 </article>
             </div>
@@ -233,7 +255,7 @@
                     </div>
                     <h3 class="service-title">Divorce & Separation</h3>
                     <p class="service-description">
-                        Guiding you through divorce proceedings with sensitivity, ensuring fair outcomes for all parties.
+                        Helping you navigate the legalities of ending a marriage or civil partnership with dignity and minimal conflict.
                     </p>
                     <a href="#contact" class="service-link">
                         Learn more
@@ -250,9 +272,9 @@
                             <path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75"/>
                         </svg>
                     </div>
-                    <h3 class="service-title">Child Custody</h3>
+                    <h3 class="service-title">Child Arrangements</h3>
                     <p class="service-description">
-                        Advocating for arrangements that prioritize your children's wellbeing and your parental rights.
+                        Prioritizing your children's wellbeing by helping you create stable, long-term agreements for where they live and how they spend time with family.
                     </p>
                     <a href="#contact" class="service-link">
                         Learn more
@@ -269,7 +291,7 @@
                     </div>
                     <h3 class="service-title">Adoption</h3>
                     <p class="service-description">
-                        Supporting families through the adoption journey with expert legal guidance every step of the way.
+                        Expert guidance through the legal complexities of growing your family, ensuring every detail is handled with care.
                     </p>
                     <a href="#contact" class="service-link">
                         Learn more
@@ -286,7 +308,7 @@
                     </div>
                     <h3 class="service-title">Domestic Protection</h3>
                     <p class="service-description">
-                        Providing swift, compassionate support for those facing domestic violence situations.
+                        Swift, confidential, and decisive legal action to ensure the safety of you and your loved ones.
                     </p>
                     <a href="#contact" class="service-link">
                         Learn more
@@ -304,7 +326,7 @@
                     </div>
                     <h3 class="service-title">Financial Settlements</h3>
                     <p class="service-description">
-                        Securing fair financial outcomes through meticulous negotiation and legal expertise.
+                        Protecting your future by securing fair and transparent division of assets, pensions, and property.
                     </p>
                     <a href="#contact" class="service-link">
                         Learn more
@@ -322,7 +344,7 @@
                     </div>
                     <h3 class="service-title">Mediation</h3>
                     <p class="service-description">
-                        Facilitating constructive dialogue to reach amicable solutions without court proceedings.
+                        A constructive, cost-effective way to resolve disputes outside of the courtroom, keeping you in control of the outcome.
                     </p>
                     <a href="#contact" class="service-link">
                         Learn more
@@ -331,6 +353,56 @@
                         </svg>
                     </a>
                 </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose AssistMe Solicitors -->
+    <section class="why-choose" id="why-choose">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Why Choose Us</span>
+                <h2 class="section-title">A Modern Approach to Family Law</h2>
+                <p class="section-description">
+                    We believe legal advice should be accessible, not intimidating. We are members of Resolution, meaning we are committed to a non-confrontational approach that protects the best interests of any children involved.
+                </p>
+            </div>
+            <div class="why-choose-grid">
+                <div class="why-choose-item">
+                    <div class="why-choose-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                        </svg>
+                    </div>
+                    <h3 class="why-choose-title">Transparent Fixed Fees</h3>
+                    <p class="why-choose-text">No hidden costs or "billable hour" surprises. You'll know exactly what you're paying from the start.</p>
+                </div>
+                <div class="why-choose-item">
+                    <div class="why-choose-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M9 12l2 2 4-4"/>
+                            <path d="M21 12c-1 0-3-1-3-3s2-3 3-3 3 1 3 3-2 3-3 3z"/>
+                            <path d="M3 12c1 0 3-1 3-3s-2-3-3-3-3 1-3 3 2 3 3 3z"/>
+                            <path d="M12 21c0-1-1-3-3-3s-3 2-3 3 2 3 3 3 3-2 3-3z"/>
+                            <path d="M12 3c0 1-1 3-3 3S6 4 6 3s2-3 3-3 3 2 3 3z"/>
+                        </svg>
+                    </div>
+                    <h3 class="why-choose-title">SRA Regulated</h3>
+                    <p class="why-choose-text">We hold ourselves to the highest professional and ethical standards in the UK legal industry.</p>
+                </div>
+                <div class="why-choose-item">
+                    <div class="why-choose-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/>
+                            <polyline points="14,2 14,8 20,8"/>
+                            <line x1="16" y1="13" x2="8" y2="13"/>
+                            <line x1="16" y1="17" x2="8" y2="17"/>
+                            <polyline points="10,9 9,9 8,9"/>
+                        </svg>
+                    </div>
+                    <h3 class="why-choose-title">Jargon-Free Clarity</h3>
+                    <p class="why-choose-text">We explain everything in plain English, so you always feel empowered to make the right decisions.</p>
+                </div>
             </div>
         </div>
     </section>
@@ -348,18 +420,18 @@
             <div class="process-steps">
                 <div class="process-step">
                     <div class="process-number">01</div>
-                    <h3 class="process-title">Free confidential consultation</h3>
-                    <p class="process-text">Tell us what’s happening. We’ll listen first, then outline your options clearly.</p>
+                    <h3 class="process-title">Initial Consultation</h3>
+                    <p class="process-text">A free, no-obligation call to listen to your story and explain your legal options.</p>
                 </div>
                 <div class="process-step">
                     <div class="process-number">02</div>
-                    <h3 class="process-title">A plan you can trust</h3>
-                    <p class="process-text">We agree a strategy and costs up front — with fixed-fee options where possible.</p>
+                    <h3 class="process-title">Transparent Strategy</h3>
+                    <p class="process-text">We provide a clear roadmap and a fixed-fee quote. No jargon, no surprises.</p>
                 </div>
                 <div class="process-step">
                     <div class="process-number">03</div>
-                    <h3 class="process-title">Steady progress</h3>
-                    <p class="process-text">We handle the legal work and keep you updated, with empathy and professionalism.</p>
+                    <h3 class="process-title">Expert Resolution</h3>
+                    <p class="process-text">Whether through negotiation or representation in court, we work tirelessly to achieve the best outcome for your family.</p>
                 </div>
             </div>
         </div>
@@ -371,18 +443,11 @@
             <div class="about-grid">
                 <div class="about-content">
                     <span class="section-label">About Us</span>
-                    <h2 class="section-title">A Legacy of Trust</h2>
+                    <h2 class="section-title">A Legacy of Support</h2>
                     <p class="about-text">
-                        For over two decades, AssistMe Solicitors has been a pillar of support 
-                        for families across the United Kingdom. We combine legal excellence 
-                        with genuine compassion, understanding that behind every case is a 
-                        family navigating difficult times.
-                    </p>
-                    <p class="about-text">
-                        Our approach is different. We listen first, advise second, and act 
-                        decisively to protect what matters most to you. Whether you're facing 
-                        divorce, custody disputes, or planning for your family's future, our 
-                        team provides the expertise and support you deserve.
+                        AssistMe Solicitors has been a pillar of support 
+                        for families across the UK. We understand that behind every case file is a 
+                        person navigating a significant life transition. We don't just process paperwork; we protect futures.
                     </p>
                     <div class="about-features">
                         <div class="feature">
@@ -441,20 +506,13 @@
                     <p class="leadership-role">Principal Solicitor & Founder</p>
                     <div class="leadership-bio">
                         <p>
-                            With over 15 years of dedicated practice in family law, Marie Erete founded 
-                            AssistMe Solicitors with a clear vision: to provide compassionate, expert legal 
-                            guidance to families during their most challenging moments.
+                            "My goal is to provide the kind of legal support I would want for my own family: honest, expert, and deeply empathetic."
                         </p>
                         <p>
-                            Marie's approach combines rigorous legal expertise with genuine empathy. 
-                            Having worked with hundreds of families across the United Kingdom, she 
-                            understands that every case represents real people navigating difficult 
-                            life transitions.
+                            Marie Erete is a solicitor advocate with higher rights of audience who has practiced law for over three decades. She began her legal career at Linklaters and Paines. Her cases have included representing the President of Nigeria in the UK, as well as other international clients and their families, bringing a global perspective to her practice.
                         </p>
                         <p>
-                            Her practice philosophy centres on clear communication, transparent pricing, 
-                            and achieving the best possible outcomes for her clients—particularly when 
-                            children's welfare is at stake.
+                            Marie founded AssistMe Solicitors to bridge the gap between high-level legal expertise and genuine human connection. She specializes in complex child arrangement cases and high-net-worth financial settlements, combining her extensive experience with a compassionate, client-focused approach.
                         </p>
                     </div>
                     <div class="leadership-credentials">
@@ -476,13 +534,6 @@
                     <div class="leadership-image">
                         <img src="assets/img/marie.webp" alt="Marie Erete, Principal Solicitor" class="leadership-photo" loading="lazy" decoding="async">
                     </div>
-                    <div class="leadership-quote">
-                        <blockquote>
-                            "Every family deserves a solicitor who truly listens. My role is to 
-                            guide, protect, and advocate—always with your family's best interests at heart."
-                        </blockquote>
-                        <cite>— Marie Erete</cite>
-                    </div>
                 </div>
             </div>
         </div>
@@ -494,23 +545,10 @@
             <div class="contact-grid">
                 <div class="contact-info">
                     <span class="section-label">Get in Touch</span>
-                    <h2 class="section-title">Let's Talk</h2>
+                    <h2 class="section-title">Ready to find a way forward?</h2>
                     <p class="contact-description">
-                        Ready to discuss your situation? Book a free, confidential 
-                        consultation with one of our experienced solicitors.
+                        Our team aims to respond to all inquiries within one business day. Your privacy is our priority—all consultations are 100% confidential.
                     </p>
-
-                    <div class="contact-reassurance" aria-label="What happens next">
-                        <div class="reassurance-row">
-                            <span class="reassurance-label">Response time</span>
-                            <span class="reassurance-value">We aim to reply within 1 business day.</span>
-                        </div>
-                        <ul class="reassurance-list">
-                            <li>No obligation — just clarity on your options.</li>
-                            <li>Confidential and discreet.</li>
-                            <li>Clear next steps and costs before any work begins.</li>
-                        </ul>
-                    </div>
                     <div class="contact-details">
                         <div class="contact-item">
                             <div class="contact-icon">
@@ -520,7 +558,7 @@
                             </div>
                             <div>
                                 <span class="contact-label">Phone</span>
-                                <a href="tel:+442071234567" class="contact-value">+44 20 7123 4567</a>
+                                <a href="tel:+442073541444" class="contact-value">+44 20 7354 1444</a>
                             </div>
                         </div>
                         <div class="contact-item">
@@ -532,7 +570,7 @@
                             </div>
                             <div>
                                 <span class="contact-label">Email</span>
-                                <a href="mailto:info@assistme.law" class="contact-value">info@assistme.law</a>
+                                <a href="mailto:info@assistmesolicitors.com" class="contact-value">info@assistmesolicitors.com</a>
                             </div>
                         </div>
                         <div class="contact-item">
@@ -543,8 +581,20 @@
                                 </svg>
                             </div>
                             <div>
-                                <span class="contact-label">Address</span>
-                                <span class="contact-value">123 Legal District, London EC1A 1BB</span>
+                                <span class="contact-label">Head Office</span>
+                                <span class="contact-value">49 Grosvenor Street, Mayfair, London W1K 3HP</span>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/>
+                                    <circle cx="12" cy="10" r="3"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <span class="contact-label">Branch Office</span>
+                                <span class="contact-value">254/255 Goswell Road, Angel, London EC1V 7LQ</span>
                             </div>
                         </div>
                         <div class="contact-item">
@@ -556,7 +606,7 @@
                             </div>
                             <div>
                                 <span class="contact-label">Hours</span>
-                                <span class="contact-value">Mon-Fri: 9am - 6pm</span>
+                                <span class="contact-value">Monday – Friday, 09:00 – 18:00</span>
                             </div>
                         </div>
                     </div>
@@ -585,7 +635,7 @@
                         <select id="service" name="service">
                             <option value="">Select a service...</option>
                             <option value="divorce">Divorce & Separation</option>
-                            <option value="custody">Child Custody</option>
+                            <option value="arrangements">Child Arrangements</option>
                             <option value="adoption">Adoption</option>
                             <option value="protection">Domestic Protection</option>
                             <option value="financial">Financial Settlements</option>
@@ -617,7 +667,15 @@
             <div class="footer-grid">
                 <div class="footer-brand">
                     <a href="#" class="logo">
-                        <span class="logo-icon">⚖</span>
+                        <span class="logo-icon" aria-hidden="true">
+                            <svg class="scales-icon" viewBox="0 0 24 24" focusable="false">
+                                <path d="M12 3v17" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+                                <path d="M5 7h14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+                                <path d="M7 7l-3 6h6l-3-6z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/>
+                                <path d="M17 7l-3 6h6l-3-6z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/>
+                                <path d="M9 20h6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+                            </svg>
+                        </span>
                         <span class="logo-text">AssistMe<span class="logo-accent">.</span></span>
                     </a>
                     <p class="footer-tagline">
@@ -629,7 +687,7 @@
                     <h4>Services</h4>
                     <ul>
                         <li><a href="#services">Divorce & Separation</a></li>
-                        <li><a href="#services">Child Custody</a></li>
+                        <li><a href="#services">Child Arrangements</a></li>
                         <li><a href="#services">Adoption</a></li>
                         <li><a href="#services">Financial Settlements</a></li>
                     </ul>
@@ -641,19 +699,23 @@
                         <li><a href="#team">Leadership</a></li>
                         <li><a href="#contact">Contact</a></li>
                         <li><a href="privacy.html">Privacy Policy</a></li>
+                        <li><a href="cookies.html">Cookies Policy</a></li>
                     </ul>
                 </div>
                 <div class="footer-contact">
                     <h4>Contact</h4>
-                    <p>+44 20 7123 4567</p>
-                    <p>info@assistme.law</p>
-                    <p>123 Legal District<br>London EC1A 1BB</p>
+                    <p>+44 20 7354 1444</p>
+                    <p>info@assistmesolicitors.com</p>
+                    <p><strong>Head Office:</strong><br>49 Grosvenor Street, Mayfair<br>London W1K 3HP</p>
+                    <p><strong>Branch Office:</strong><br>254/255 Goswell Road, Angel<br>London EC1V 7LQ</p>
                 </div>
             </div>
             <div class="footer-bottom">
                 <p>© 2024 AssistMe Solicitors. All rights reserved.</p>
                 <p>
                     <a href="privacy.html">Privacy Policy</a>
+                    <span aria-hidden="true"> • </span>
+                    <a href="cookies.html">Cookies Policy</a>
                     <span aria-hidden="true"> • </span>
                     <a href="https://solicitors.lawsociety.org.uk/office/34885/assist-me-solicitors" target="_blank" rel="noopener noreferrer">
                         Law Society registration
