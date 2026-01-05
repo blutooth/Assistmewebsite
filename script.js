@@ -105,6 +105,14 @@ function initSmoothScroll() {
                     top: targetPosition,
                     behavior: 'smooth'
                 });
+                
+                // Close mobile menu if open
+                const toggle = document.querySelector('.mobile-menu-toggle');
+                const navLinks = document.querySelector('.nav-links');
+                if (toggle && navLinks) {
+                    toggle.classList.remove('active');
+                    navLinks.classList.remove('mobile-open');
+                }
             }
         });
     });
@@ -193,6 +201,14 @@ function initMobileMenu() {
         toggle.addEventListener('click', () => {
             toggle.classList.toggle('active');
             navLinks.classList.toggle('mobile-open');
+        });
+        
+        // Close menu when a link is clicked
+        navLinks.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                toggle.classList.remove('active');
+                navLinks.classList.remove('mobile-open');
+            });
         });
     }
 }

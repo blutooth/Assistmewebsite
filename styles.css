@@ -235,6 +235,7 @@ h1, h2, h3, h4, h5, h6 {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 var(--space-lg);
+    position: relative;
 }
 
 .logo {
@@ -2158,13 +2159,48 @@ a.contact-value:hover {
 }
 
 @media (max-width: 768px) {
-    .nav-links,
+    .nav-links {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        flex-direction: column;
+        background: var(--color-white);
+        padding: var(--space-lg);
+        gap: var(--space-md);
+        box-shadow: var(--shadow-lg);
+        border-top: 1px solid var(--color-gray-200);
+    }
+    
+    [data-theme="dark"] .nav-links {
+        background: var(--color-gray-900);
+        border-top-color: var(--color-gray-800);
+    }
+    
+    .nav-links.mobile-open {
+        display: flex;
+    }
+    
+    .nav-links a {
+        padding: var(--space-sm) 0;
+        font-size: 1rem;
+    }
+    
     .nav-cta {
         display: none;
     }
     
     .mobile-menu-toggle {
         display: flex;
+    }
+    
+    .mobile-menu-toggle.active span:first-child {
+        transform: rotate(45deg) translate(5px, 5px);
+    }
+    
+    .mobile-menu-toggle.active span:last-child {
+        transform: rotate(-45deg) translate(6px, -6px);
     }
     
     .hero-stats {
